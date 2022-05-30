@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Lakki+Reddy&family=Poppins:ital,wght@1,600&display=swap");
+
+.container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  margin: 0.5rem;
+  padding: 0 2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  border-bottom: 0.1px solid rgb(216, 216, 216);
+}
+
+.header {
+  width: 75%;
+  justify-self: center;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-row: 2rem;
+  grid-gap: 5rem;
+  justify-items: center;
+  align-items: start;
+  text-align: start;
+  border-bottom: 0.1px solid rgb(216, 216, 216);
+}
+
+.makeImageCircular {
+  border-radius: 50%;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  text-align: center;
+
+}
+
+.margin {
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+}
+
+.btn {
+  background-color: #796de0;
+  border-radius: 0.2rem;
+  color: white;
+  margin-top: 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  padding: 0.5rem 5rem;
+  border: none;
+  width: 100%;
+
+}
+
+.msgbutton {
+  background-color: white;
+  border-radius: 0.2rem;
+  color: rgb(0, 0, 0);
+  margin-top: 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  padding: 0.5rem 5rem;
+  border: 0.5px solid rgb(198, 198, 198);
+  text-align: center;
+}
+
+
+.msgbutton2 {
+  background-color: white;
+  border-radius: 0.2rem;
+  color: rgb(0, 0, 0);
+  margin-top: 1rem;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  border: 0.5px solid rgb(198, 198, 198);
+
+  text-align: center;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  width: 75%;
+  margin-top: 2rem;
+  justify-self: center;
+}
+
+.card {
+  border: 0.5px solid rgb(198, 198, 198);
+
+  border-radius: 0.4rem;
+  height: 15rem;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
