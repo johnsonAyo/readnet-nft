@@ -49,11 +49,11 @@ export default function Home() {
   }
 
   useEffect(() => {
-    if (!isWeb3Enabled && isAuthenticated) {
+    if (!isWeb3Enabled && isAuthenticated && !user) {
       enableWeb3({ provider: "walletconnect", chainId: 56 });
       console.log("web3 activated");
     }
-  }, [isWeb3Enabled, isAuthenticated, enableWeb3]);
+  }, [isWeb3Enabled, isAuthenticated, enableWeb3, user]);
 
   // document.addEventListener("visibilitychange", () => {
   //   if (document.visibilityState === "hidden") {

@@ -2,11 +2,19 @@ import React, { useEffect } from "react";
 import Image from "next/Image";
 import styles from "../styles/Home.module.scss";
 
+import { useMoralisWeb3Api } from "react-moralis";
+
 import truncateEthAddress from "truncate-eth-address";
 
 const Main = ({ user }) => {
-  const walletAddress = `0x7358B726830A2E222f9b139E90483A37142bcBE5`;
-  console.log(`Your address is: ${truncateEthAddress(walletAddress)}`);
+  const Web3Api = useMoralisWeb3Api();
+
+  const fetchAddress = async () => {
+    // get ENS domain of an address
+    const options = { address: "0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045" };
+    const resolve = await Web3Api.resolve.resolveAddress(options);
+    console.log(resolve);
+  };
 
   return (
     <div className={styles.header}>
