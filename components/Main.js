@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/Image";
 import styles from "../styles/Home.module.scss";
 
-const Main = () => {
+import truncateEthAddress from "truncate-eth-address";
+
+const Main = ({ user }) => {
+  const walletAddress = `0x7358B726830A2E222f9b139E90483A37142bcBE5`;
+  console.log(`Your address is: ${truncateEthAddress(walletAddress)}`);
+
   return (
     <div className={styles.header}>
       <div>
@@ -11,15 +16,18 @@ const Main = () => {
             src="https://www.eu-startups.com/wp-content/uploads/2021/10/READNET_PUBLICATIONS-03-scaled.jpg"
             alt=""
             className={styles.makeImageCircular}
-            height={200}
-            width={200}
+            height={150}
+            width={150}
           />
         </div>
         <h5>Watchen</h5>
         <h6> A network for Nft Enthusiasts</h6>
       </div>
       <div>
-        <h3> Watchen Wallet Address</h3>
+        <p className={styles.ens}>
+          {user.getUsername()} {`${truncateEthAddress(user.get("ethAddress"))}`}
+        </p>
+        {/* {console.log({ user }, user.getUsername())} */}
         <div className={styles.details}>
           <div>
             <p>13</p>

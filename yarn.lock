@@ -6409,6 +6409,11 @@
   "resolved" "https://registry.npmjs.org/tr46/-/tr46-0.0.3.tgz"
   "version" "0.0.3"
 
+"truncate-eth-address@^1.0.2":
+  "integrity" "sha512-MLGSzEIDam9XdBQejtCpQfdbgXfYTEkQseqpz+Pcqu6SEvvVC4mYniWFp4n8VG+KOi6jYVtUfA6cqWecSvS3rw=="
+  "resolved" "https://registry.npmjs.org/truncate-eth-address/-/truncate-eth-address-1.0.2.tgz"
+  "version" "1.0.2"
+
 "ts-custom-error@^3.2.0":
   "integrity" "sha512-cBvC2QjtvJ9JfWLvstVnI45Y46Y5dMxIaG1TDMGAD/R87hpvqFL+7LhvUDhnRCfOnx/xitollFWWvUKKKhbN0A=="
   "resolved" "https://registry.npmjs.org/ts-custom-error/-/ts-custom-error-3.2.0.tgz"

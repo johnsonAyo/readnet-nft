@@ -1,20 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Lakki+Reddy&family=Poppins:ital,wght@1,600&display=swap");
-
 .container {
   display: grid;
   justify-content: center;
-  align-items: center;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+
+
+}
+
+.ens {
+  font-size: 0.9rem
 }
 
 .nav {
   display: grid;
   grid-template-columns: 5fr 1fr;
-  margin: 0.5rem;
-  padding: 0 2rem;
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: 1rem;
   font-family: "Poppins", sans-serif;
   border-bottom: 0.1px solid rgb(216, 216, 216);
+  align-items: center;
 }
 
 .header {
@@ -28,6 +31,7 @@
   align-items: start;
   text-align: start;
   border-bottom: 0.1px solid rgb(216, 216, 216);
+  margin-top: 3rem;
 }
 
 .makeImageCircular {
@@ -56,8 +60,8 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 1rem;
-  padding: 0.5rem 5rem;
+  font-size: 0.8rem;
+  padding: 0.8rem 5rem;
   border: none;
   width: 100%;
 
@@ -71,8 +75,8 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 1rem;
-  padding: 0.5rem 5rem;
+  font-size: 0.8rem;
+  padding: 0.8rem 5rem;
   border: 0.5px solid rgb(198, 198, 198);
   text-align: center;
 }
@@ -86,7 +90,7 @@
   text-align: center;
   text-decoration: none;
   margin-left: 0.5rem;
-  font-size: 1rem;
+  font-size: 0.8rem;
   border: 0.5px solid rgb(198, 198, 198);
   text-align: center;
 }
@@ -115,6 +119,57 @@
 .icon {
   font-size: 3.5rem;
   text-align: center;
+}
+
+.Hero {
+  text-align: center;
+  font-size: 5rem;
+  align-items: center;
+  align-content: center;
+  margin: 12rem;
+}
+
+.HeroButton {
+  background: #4F46E5;
+  border-radius: 0.2rem;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  padding: 0.8rem 2rem;
+  border: none;
+  align-self: center;
+  width: 20rem;
+  height: 3.5rem;
+
+
+}
+
+.h1 {
+  padding: 0rem;
+  margin: 0;
+  background: linear-gradient(90deg, #3632F3 -8.79%, #F926A5 106.67%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+
+
+}
+
+.walletConnect {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  border: 0.5px solid rgb(198, 198, 198);
+  font-size: 1rem;
+  padding: 0.5rem 1rem
+}
+
+.modalHeader {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 2rem;
 }
 
 
