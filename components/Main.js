@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import Image from "next/Image";
 import styles from "../styles/Home.module.scss";
+import { FaEnvelope } from "react-icons/fa";
+import { TbDotsVertical } from "react-icons/tb";
 
 import { useMoralisWeb3Api } from "react-moralis";
 
@@ -17,25 +19,24 @@ const Main = ({ user }) => {
   };
 
   return (
-    <div className={styles.header}>
+    <div className={styles.heroHeader}>
       <div>
-        <div>
-          <Image
-            src="https://www.eu-startups.com/wp-content/uploads/2021/10/READNET_PUBLICATIONS-03-scaled.jpg"
-            alt=""
-            className={styles.makeImageCircular}
-            height={150}
-            width={150}
-          />
-        </div>
+        <Image
+          src="https://www.eu-startups.com/wp-content/uploads/2021/10/READNET_PUBLICATIONS-03-scaled.jpg"
+          alt=""
+          className={styles.makeImageCircular}
+          height={130}
+          width={130}
+        />
         <h5>Watchen</h5>
-        <h6> A network for Nft Enthusiasts</h6>
+        <h6 className={styles.bio}> A network for Nft Enthusiasts</h6>
       </div>
       <div>
         <p className={styles.ens}>
-          {user.getUsername()} {`${truncateEthAddress(user.get("ethAddress"))}`}
+          {user.getUsername()} &nbsp; &nbsp;
+          {`${truncateEthAddress(user.get("ethAddress"))}`}
         </p>
-        {/* {console.log({ user }, user.getUsername())} */}
+
         <div className={styles.details}>
           <div>
             <p>13</p>
@@ -51,13 +52,16 @@ const Main = ({ user }) => {
           </div>
         </div>
       </div>
-      <div>
-        <div>
-          <button className={styles.btn}> Follow </button>
-        </div>
+      <div className={styles.twoButtons}>
+        <button className={styles.btn}> Follow </button>
         <div className={styles.buttons}>
-          <button className={styles.msgbutton}>Message</button>
-          <button className={styles.msgbutton2}>...</button>
+          <button className={styles.msgbutton}>
+            <FaEnvelope className={styles.msgIcon} />
+            Message
+          </button>
+          <button className={styles.msgbutton2}>
+            <TbDotsVertical className={styles.verticalIcon} />
+          </button>
         </div>
       </div>
     </div>

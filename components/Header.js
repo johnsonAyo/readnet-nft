@@ -6,14 +6,16 @@ const Header = ({ user, logout, isLoggingOut }) => {
   return (
     <>
       <div className={styles.nav}>
-        <div>Readnet Accessment</div>
+        <div>
+          Readnet Accessment <span className={styles.badge}>test Badge</span>
+        </div>
 
         <div>
           <FaToggleOn
             onClick={logout}
             disabled={isLoggingOut}
             className={styles.icon}
-          ></FaToggleOn>
+          />
         </div>
       </div>
     </>
