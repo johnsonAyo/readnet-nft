@@ -62,7 +62,10 @@ export default function Home() {
           <Head>
             <title>Readnet NFT Marketplace</title>
             <meta name="description" content="Readnet nft Marketplace" />
-            <link rel="icon" href="https://www.eu-startups.com/wp-content/uploads/2021/10/READNET_PUBLICATIONS-03-scaled.jpg" />
+            <link
+              rel="icon"
+              href="https://www.eu-startups.com/wp-content/uploads/2021/10/READNET_PUBLICATIONS-03-scaled.jpg"
+            />
           </Head>
           <div className={styles.Hero}>
             <h1 className={styles.h1}>gm</h1>

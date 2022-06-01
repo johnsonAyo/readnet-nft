@@ -25,10 +25,10 @@ const Main = ({ user }) => {
           src="https://www.eu-startups.com/wp-content/uploads/2021/10/READNET_PUBLICATIONS-03-scaled.jpg"
           alt=""
           className={styles.makeImageCircular}
-          height={130}
-          width={130}
+          h={{ base: "90px", md: "130px" }}
+          w={{ base: "90px", md: "130px" }}
         />
-        <h5>Watchen</h5>
+        <h5 className={styles.bioName}>Watchen</h5>
         <h6 className={styles.bio}> A network for Nft Enthusiasts</h6>
       </div>
       <div>
