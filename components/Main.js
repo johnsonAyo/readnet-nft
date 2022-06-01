@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Image from "next/Image";
+import { Image } from "@chakra-ui/react";
 import styles from "../styles/Home.module.scss";
 import { FaEnvelope } from "react-icons/fa";
 import { TbDotsVertical } from "react-icons/tb";
@@ -11,12 +11,12 @@ import truncateEthAddress from "truncate-eth-address";
 const Main = ({ user }) => {
   const Web3Api = useMoralisWeb3Api();
 
-  const fetchAddress = async () => {
-    // get ENS domain of an address
-    const options = { address: "0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045" };
-    const resolve = await Web3Api.resolve.resolveAddress(options);
-    console.log(resolve);
-  };
+  // const fetchAddress = async () => {
+  //   // get ENS domain of an address
+  //   const options = { address: "0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045" };
+  //   const resolve = await Web3Api.resolve.resolveAddress(options);
+  //   console.log(resolve);
+  // };
 
   return (
     <div className={styles.heroHeader}>
