@@ -1,0 +1,9 @@
+[[plugins]]
+package = "@netlify/plugin-nextjs"
+
+[build]
+command = "yarn next build"
+publish = ".next"
+
+NETLIFY_AUTH_TOKEN = aJ21d5r0l_E1X_4BPCo3e-x7sa9Y2L5qGs-yCAUczuA
+NETLIFY_SITE_ID = 
