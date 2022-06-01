@@ -7,7 +7,7 @@ const Header = ({ user, logout, isLoggingOut }) => {
     <>
       <div className={styles.nav}>
         <div>
-          Readnet Accessment <span className={styles.badge}>test Badge</span>
+          Readnet Assessment <span className={styles.badge}>test Badge</span>
         </div>
 
         <div>
