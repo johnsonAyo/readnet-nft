@@ -73,7 +73,7 @@ export default function Home() {
 
             <Modal isOpen={isOpen} onClose={onClose} isCentered variant="wide">
               <ModalOverlay />
-              <ModalContent>
+              <ModalContent w={{ base: "330px", md: "400px", lg: "500px" }}>
                 <ModalHeader className={styles.modalHeader}>
                   Connect your wallet
                 </ModalHeader>

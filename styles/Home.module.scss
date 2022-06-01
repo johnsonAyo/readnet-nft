@@ -285,5 +285,12 @@ $primary-color: #4F46E5;
     margin-left: 1rem;
   }
 
+  #chakra-modal-mymodal {
+
+    // There is a max-width rule used by chakra-ui,
+    // thus you need to overwrite it to make it work.
+    width: 90%
+  }
+
 
 }
